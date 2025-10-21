@@ -4,15 +4,15 @@
 
 <head>
 
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Function: Click</title>
+    <title>Function: Click</title>
 
-  <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 
 
@@ -20,11 +20,11 @@
 
 <body>
 
-  <section class="container">
+    <section class="container">
 
-    <!-- Esquerda -->
+      <!-- Esquerda -->
 
-    <div class="left">
+      <div class="left">
 
       <nav class="menuLateral">
 
@@ -80,8 +80,7 @@
 
           <!-- Informações sobre o BPC e BPS, respectivamente, e com onclick false para não ser clicáveis!-->
 
-          <li class="stats"> <a href="#" onclick="return false;"> <span class="icon"><i
-                  class="bi bi-info-circle"></i></span>
+          <li class="stats"> <a href="#" onclick="return false;"> <span class="icon"><i class="bi bi-info-circle"></i></span>
 
               <div class="txt-link stats-text-container">
 
@@ -99,255 +98,267 @@
 
       </nav>
 
-    </div>
-
-    <!-- Centro -->
-
-    <div class="center">
-
-      <img src="./imagens/1 pc.png" class="pc" onclick="ganharBytes()" draggable="false">
-
-      <h3>Bytes: <br><img src="./imagens/byte.png" class="bytes-img2" draggable="false"><span
-          class="custo-bytes">0</span></h3>
-
-    </div>
-
-
-
-    <!-- Direita -->
-
-    <!-- Upgrade 1 (Mouse)-->
-
-    <div class="right">
-
-      <div class="phone-frame">
-
-        <img src="./imagens/cerula.png" class="celular-img" draggable="false">
-
-        <div class="upgrades-container">
-
-          <div class="upgrade" onclick="comprarClick()">
-
-            <div class="left-sec">
-
-              <img src="./imagens/1 mouse.png" class="upgrade-img">
-
-            </div>
-
-            <div class="mid-sec">
-
-              <h4>Mouse</h4>
-
-              <div class="cost-info">
-
-                <p>Preço: <span class="clicker-cost">10</span></p>
-
-                <img src="./imagens/byte.png" class="bytes-img">
-
-              </div>
-
-            </div>
-
-            <div class="right-sec">
-
-              <h4><span class="mouse-level">0</span></h4>
-
-              <p>Level</p>
-
-              <div class="prox-level-info">
-
-                <p>
-
-                  +<span class="mouse-mais">1</span> Bytes <br /> Por Click
-
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <!-- Upgrade ? (Liberar BPS)-->
-
-          <div class="upgrade" id="fonte-card" onclick="comprarFonte()">
-
-            <div class="left-sec">
-
-              <img src="./imagens/fonte.png" class="fonte-img">
-
-            </div>
-
-            <div class="mid-sec">
-
-              <h4>Fonte</h4>
-
-              <div class="cost-info">
-
-                <p>Preço: <span class="fonte-cost">130</span></p>
-
-                <img src="./imagens/byte.png" class="bytes-img">
-
-              </div>
-
-            </div>
-
-            <div class="right-sec">
-
-              <div class="prox-level-info">
-
-                <p>Liberar os Bytes por Segundo</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <!-- Upgrade 2 (Placa Mãe)-->
-
-          <div class="upgrade" id="upgrade-bloqueado" onclick="comprarMae()">
-
-            <div class="left-sec">
-
-              <img src="./imagens/placa mãe.png" class="upgrade-img">
-
-            </div>
-
-            <div class="mid-sec">
-
-              <h4>Placa Mãe</h4>
-
-              <div class="cost-info">
-
-                <p>Preço: <span class="mae-cost">130</span></p>
-
-                <img src="./imagens/byte.png" class="bytes-img">
-
-              </div>
-
-            </div>
-
-            <div class="right-sec">
-
-              <h4><span class="mae-level">0</span></h4>
-
-              <p>Level</p>
-
-              <div class="prox-level-info">
-
-                <p>
-
-                  +<span class="mae-mais">1</span> Bytes <br /> Por Segundo
-
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <!-- Upgrade 3 (Processador)-->
-
-          <div class="upgrade" id="upgrade-bloqueado" onclick="comprarProcess()">
-
-            <div class="left-sec">
-
-              <img src="./imagens/processador.png" class="upgrade-img">
-
-            </div>
-
-            <div class="mid-sec">
-
-              <h4>Processador</h4>
-
-              <div class="cost-info">
-
-                <p>Preço: <span class="process-cost">850</span></p>
-
-                <img src="./imagens/byte.png" class="bytes-img">
-
-              </div>
-
-            </div>
-
-            <div class="right-sec">
-
-              <h4><span class="process-level">0</span></h4>
-
-              <p>Level</p>
-
-              <div class="prox-level-info">
-
-                <p>
-
-                  +<span class="process-mais">4</span> Bytes <br /> Por Segundo
-
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <!-- Upgrade 3 (Placa de Vídeo)-->
-
-          <div class="upgrade" id="upgrade-bloqueado" onclick="comprarGPU()">
-
-            <div class="left-sec">
-
-              <img src="./imagens/placa de video.png" class="upgrade-img">
-
-            </div>
-
-            <div class="mid-sec">
-
-              <h4>Placa de Vídeo</h4>
-
-              <div class="cost-info">
-
-                <p>Preço: <span class="GPU-cost">3500</span></p>
-
-                <img src="./imagens/byte.png" class="bytes-img">
-
-              </div>
-
-            </div>
-
-            <div class="right-sec">
-
-              <h4><span class="GPU-level">0</span></h4>
-
-              <p>Level</p>
-
-              <div class="prox-level-info">
-
-                <p>
-                  +<span class="GPU-mais">12</span> Bytes <br /> Por Segundo
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
 
-  <script src="index.js"></script>
+      <!-- Centro -->
 
-</body>
+      <div class="center">
+
+        <img src="./imagens/1 pc.png" class="pc" onclick="ganharBytes()" draggable="false">
+
+        <h3>Bytes: <br><img src="./imagens/byte.png" class="bytes-img2" draggable="false"><span class="custo-bytes">0</span></h3>
+
+      </div>
+
+       
+
+      <!-- Direita -->
+
+      <!-- Upgrade 1 (Mouse)-->
+
+      <div class="right">
+
+        <div class="phone-frame">
+
+          <img src="./imagens/cerula.png" class="celular-img" draggable="false">
+
+          <div class="upgrades-container">
+
+            <div class="upgrade" onclick="comprarClick()">
+
+              <div class="left-sec">
+
+                <img src="./imagens/1 mouse.png" class="upgrade-img">
+
+              </div>
+
+              <div class="mid-sec">
+
+                <h4>Mouse</h4>
+
+                <div class="cost-info">
+
+                  <p>Preço: <span class="clicker-cost">10</span></p>
+
+                  <img src="./imagens/byte.png" class="bytes-img">
+
+                </div>
+
+              </div>
+
+              <div class="right-sec">
+
+                <h4><span class="mouse-level">0</span></h4>
+
+                <p>Level</p>
+
+                <div class="prox-level-info">
+
+                    <p>
+
+                        +<span class="mouse-mais">1</span> Bytes <br /> Por Click
+
+                    </p>
+
+                </div>
+
+              </div>
+
+            </div>
 
 
 
+              <!-- Upgrade ? (Liberar BPS)-->
+
+              <div class="upgrade" id="fonte-card" onclick="comprarFonte()">
+
+                <div class="left-sec">
+
+                  <img src="./imagens/fonte.png" class="fonte-img">
+
+                </div>
+
+                <div class="mid-sec">
+
+                  <h4>Fonte</h4>
+
+                  <div class="cost-info">
+
+                    <p>Preço: <span class="fonte-cost">130</span></p>
+
+                    <img src="./imagens/byte.png" class="bytes-img">
+
+                  </div>
+
+                </div>
+
+                <div class="right-sec">
+
+                  <div class="prox-level-info">
+
+                      <p>Liberar os Bytes por Segundo</p>
+
+                  </div>
+
+                </div>
+
+              </div>              
+
+
+
+            <!-- Upgrade 2 (Placa Mãe)-->
+
+            <div class="upgrade" id="upgrade-bloqueado" onclick="comprarMae()">
+
+                <div class="left-sec">
+
+                  <img src="./imagens/placa mãe.png" class="upgrade-img">
+
+                </div>
+
+                <div class="mid-sec">
+
+                  <h4>Placa Mãe</h4>
+
+                  <div class="cost-info">
+
+                    <p>Preço: <span class="mae-cost">130</span></p>
+
+                    <img src="./imagens/byte.png" class="bytes-img">
+
+                  </div>
+
+                </div>
+
+                <div class="right-sec">
+
+                  <h4><span class="mae-level">0</span></h4>
+
+                  <p>Level</p>
+
+                  <div class="prox-level-info">
+
+                      <p>
+
+                          +<span class="mae-mais">1</span> Bytes <br /> Por Segundo
+
+                      </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <!-- Upgrade 3 (Processador)-->
+
+              <div class="upgrade" id="upgrade-bloqueado" onclick="comprarProcess()">
+
+                <div class="left-sec">
+
+                  <img src="./imagens/processador.png" class="upgrade-img">
+
+                </div>
+
+                <div class="mid-sec">
+
+                  <h4>Processador</h4>
+
+                  <div class="cost-info">
+
+                    <p>Preço: <span class="process-cost">850</span></p>
+
+                    <img src="./imagens/byte.png" class="bytes-img">
+
+                  </div>
+
+                </div>
+
+                <div class="right-sec">
+
+                  <h4><span class="process-level">0</span></h4>
+
+                  <p>Level</p>
+
+                  <div class="prox-level-info">
+
+                      <p>
+
+                          +<span class="process-mais">4</span> Bytes <br /> Por Segundo
+
+                      </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <!-- Upgrade 3 (Placa de Vídeo)-->
+
+              <div class="upgrade" id="upgrade-bloqueado" onclick="comprarGPU()">
+
+                <div class="left-sec">
+
+                  <img src="./imagens/placa de video.png" class="upgrade-img">
+
+                </div>
+
+                <div class="mid-sec">
+
+                  <h4>Placa de Vídeo</h4>
+
+                  <div class="cost-info">
+
+                    <p>Preço: <span class="GPU-cost">3500</span></p>
+
+                    <img src="./imagens/byte.png" class="bytes-img">
+
+                  </div>
+
+                </div>
+
+                <div class="right-sec">
+
+                  <h4><span class="GPU-level">0</span></h4>
+
+                  <p>Level</p>
+
+                  <div class="prox-level-info">
+
+                      <p>
+
+                          +<span class="GPU-mais">12</span> Bytes <br /> Por Segundo
+
+                      </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+ 
+
+    <script src="index.js"></script>
+
+  </body>  
+
+ 
 
 </html>
+
