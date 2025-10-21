@@ -1,0 +1,671 @@
+/* Parte 1 da Base da Página */
+
+
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body{
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  background-color: #2C2C2C;
+
+  color: #fff;
+
+  user-select: none;
+
+  font-family: Arial, sans-serif;
+
+  position: relative;
+
+}
+
+
+
+#butao{
+
+  width: 100px;
+
+  height: 30px;
+
+}
+
+
+
+.container {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  width: 100vw;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+}
+
+
+
+.left-space{
+
+  flex: 1;
+
+}
+
+
+
+.center {
+
+  flex: 1;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+
+}
+
+
+
+.center h3{
+
+  font-size: 30px;
+
+  margin-top: 20px;
+
+}
+
+
+
+/* Parte 1 da Base da Página */
+
+
+
+/* Início do PC */
+
+
+
+.pc{
+
+  width: 350px;
+
+  cursor: pointer;
+
+}
+
+
+
+.pc:hover{
+
+  opacity: 0.9;
+
+}
+
+
+
+.pc:active{
+
+  opacity: 0.8;
+
+  transform: scale(1.02);
+
+}
+
+
+
+/* Fim do PC */
+
+
+
+/* Parte 2 da Base da Página */
+
+
+
+.right {
+
+  padding-right: 2vw;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100%;
+
+}
+
+
+
+.phone-frame{
+
+  position: relative;
+
+  height: 95vh;
+
+  aspect-ratio: 9.5 / 12.5;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: hidden;
+
+}
+
+
+
+.celular-img{
+
+  width: 81.5vh;
+
+  height: 100vh;
+
+  object-fit: contain;
+
+  display: block;
+
+  pointer-events: none;
+
+}
+
+
+
+/* Parte 2 da Base da Página */
+
+
+
+/* Cards de Upgrade e Imagens */
+
+
+
+.upgrades-container{
+
+  position: absolute;
+
+  top: 17.5%;
+
+  left: 20%;
+
+  right: 20%;
+
+  bottom: 8.5%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: start;
+
+  align-items: center;
+
+  gap: 15px;
+
+}
+
+
+
+.upgrade{
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 330px;
+
+  height: 65px;
+
+  border: 2px solid white;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  background-color: rgba(255,255,255,0.05);
+
+  cursor: pointer;
+
+  position: relative;
+
+  transition: all 0.4s ease;
+
+}
+
+
+
+.upgrade.sumir{
+
+  opacity: 0;
+
+  transform: scale(0.9);
+
+  height: 0;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  border: none;
+
+}
+
+
+
+.upgrade-img{
+
+  width: 45px;
+
+}
+
+
+
+.bytes-img{
+
+  width: 18px;
+
+  height: 18px;
+
+}
+
+
+
+.bytes-img2{
+
+  width: 25px;
+
+  height: 25px;
+
+  margin-right: 6px;
+
+  position: relative;
+
+  top: 2px;
+
+}
+
+
+
+.cost-info{
+
+  display: flex;
+
+  gap: 5px;
+
+  align-items: center;
+
+}
+
+
+
+/* Cards de Upgrade e Imagens */
+
+
+
+/* Arrumadinha nos textos */
+
+
+
+.mid-sec h4{
+
+  margin: 0;
+
+  margin-bottom: 5px;
+
+  font-size: 16px;
+
+}
+
+
+
+.mid-sec p{
+
+  margin: 0;
+
+}
+
+
+
+.right-sec h4{
+
+  text-align: center;
+
+  font-size: 22px;
+
+  margin: 0;
+
+}
+
+
+
+.right-sec p{
+
+  margin: 0;
+
+  font-size: 12px;
+
+}
+
+
+
+/* Arrumadinha nos textos */
+
+
+
+/* Configuração de Upgrades (Estilização especial para a Fonte e uns efeitos pra deixa bonito) */
+
+
+
+.prox-level-info{
+
+  position: absolute;
+
+  right: -153px;
+
+  top: 5px;
+
+  padding-top: 10px;
+
+  height: 50px;
+
+  width: 100px;
+
+  text-align: center;
+
+  justify-content: center;
+
+  display: none;
+
+}
+
+
+
+.upgrade:hover .prox-level-info{
+
+  display: block;
+
+  border: 1px solid black;
+
+}
+
+
+
+#fonte-card{
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  text-align: left;
+
+  width: 330px;
+
+  height: 65px;
+
+  border: 2px solid white;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  background-color: rgba(255,255,255,0.05);
+
+  cursor: pointer;
+
+  position: relative;
+
+}
+
+
+
+.fonte-img{
+
+  width: 45px;
+
+  height: auto;
+
+  display: block;
+
+}
+
+
+
+.fonte-bloqueada {
+
+position: relative;
+
+opacity: 0.4;
+
+pointer-events: none;
+
+filter: grayscale(1);
+
+}
+
+
+
+.fonte-bloqueada::after {
+
+content: "✖";
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+font-size: 60px;
+
+color: red;
+
+font-weight: bold;
+
+pointer-events: none;
+
+}
+
+
+
+#upgrade-bloqueado{
+
+opacity: 0.4;
+
+pointer-events: none;
+
+filter: grayscale(1);
+
+}
+
+
+
+/* Configuração de Upgrades (Estilização especial para a Fonte e uns efeitos pra deixa bonito) */
+
+
+
+/* Barra Lateral: Configs*/
+
+
+
+ .left {
+
+  width: 80px;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+  transition: width 0.3s ease;
+
+}
+
+
+
+.left:hover{
+
+  width: 300px;
+
+}
+
+
+
+.menuLateral{
+
+  width: 300px;
+
+  height: 100%;
+
+  background-color: #202020;
+
+}
+
+
+
+.menuLateral ul{
+
+  list-style: none;
+
+  padding-top: 40px;
+
+}
+
+
+
+.menuLateral li{
+
+  transition: background-color 0.2s ease;
+
+}
+
+
+
+.menuLateral li:hover{
+
+  background-color: #333;
+
+}
+
+
+
+.menuLateral a{
+
+  display: flex;
+
+  align-items: center;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  padding: 15px 0;
+
+  height: 50px;
+
+}
+
+
+
+.menuLateral .icon{
+
+  min-width: 80px;
+
+  text-align: center;
+
+  font-size: 1.5rem;
+
+}
+
+
+
+.menuLateral .txt-link{
+
+  white-space: nowrap;
+
+  font-size: 1rem;
+
+}
+
+
+
+/* Barra Lateral: Configs */
+
+
+
+/* Barra Lateral: Estatísticas*/
+
+
+
+.stats{
+
+margin-top: 15px;
+
+padding-top: 15px;
+
+border-top: 5px solid #444;
+
+}
+
+
+
+.stats:hover{
+
+background-color: transparent !important;
+
+}
+
+
+
+.stats a {
+
+cursor: default;
+
+color: #ccc;
+
+pointer-events: none; /* <-- ADICIONE ESTA LINHA */
+
+}
+
+
+
+.stats-text-container{
+
+display: flex;
+
+flex-direction: column;
+
+line-height: 1.5;
+
+font-weight: bold;
+
+}
+
+
+
+/* Barra Lateral: Estatísticas*/
