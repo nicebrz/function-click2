@@ -56,7 +56,7 @@ tema.addEventListener("click", (event) => {
 
     textoL.textContent = "Tema Escuro";
 
-    celular.src = "./Function Click/imagens/cerula.png";
+    celular.src = "./imagens/cerula.png";
 
 
 
@@ -78,9 +78,9 @@ tema.addEventListener("click", (event) => {
 
 
 
-    byte1.forEach(img => img.src = "./Function Click/imagens/byte.png");
+    byte1.forEach(img => img.src = "./imagens/byte.png");
 
-    byte2.forEach(img => img.src = "./Function Click/imagens/byte.png");
+    byte2.forEach(img => img.src = "./imagens/byte.png");
 
 
 
@@ -96,7 +96,7 @@ tema.addEventListener("click", (event) => {
 
     textoL.textContent = "Tema Claro";
 
-    celular.src = "./Function Click/imagens/cerula branco.PNG";
+    celular.src = "./imagens/cerula branco.PNG";
 
 
 
@@ -118,9 +118,9 @@ tema.addEventListener("click", (event) => {
 
 
 
-    byte1.forEach(img => img.src = "./Function Click/imagens/byte branco.PNG");
+    byte1.forEach(img => img.src = "./imagens/byte branco.PNG");
 
-    byte2.forEach(img => img.src = "./Function Click/imagens/byte branco.PNG");
+    byte2.forEach(img => img.src = "./imagens/byte branco.PNG");
 
 
 
